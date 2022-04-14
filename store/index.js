@@ -4,15 +4,37 @@ const state = () => ({
 
 const mutations = {
   addItem(state, selectedItem) {
-    state.orders.push({
-      name: selectedItem.name,
-      price: selectedItem.price,
-      quantity: 1,
-    });
+    const index = state.orders.findIndex(
+      (item) => { return item.name === selectedItem.name; });
+
+    if (index === -1) {
+      state.orders.push({
+        name: selectedItem.name,
+        price: selectedItem.price,
+        quantity: 1,
+      });
+    } else {
+      state.orders[index].quantity++;
+    }
+  },
+
+  removeItem(state, SelectedItem) {
+    const index = state.orders.findIndex(
+      (item) => {
+        return item.name === SelectedItem.name;
+      });
+    state.orders.splice(index, 1)
+  }
+};
+
+const getters = {
+  totalItems(state) {
+    return state.orders.length;
   },
 };
 
 export default {
   state,
   mutations,
+  getters,
 };

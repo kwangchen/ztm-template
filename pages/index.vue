@@ -46,26 +46,74 @@
       </button>
     </div>
 
-    <div id="section-2" class="grid grid-cols-3 bg-yellow-500 text-center px-20 pt-5">
+    <div
+      id="section-2"
+      class="grid grid-cols-3 bg-yellow-500 text-center px-20 pt-5 gap-10"
+    >
       <div>
-        <img src="star.jpg" class="w-[100px] mx-auto" alt="" />
-        <h3 class="font-oswald uppercase mt-5 ml-5">Original Recipes</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-20 w-20 stroke-1 mx-auto"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+          />
+        </svg>
+        <h3 class="font-medium font-oswald uppercase text-2xl mt-5 ml-5 py-5">
+          Original Recipes
+        </h3>
         <p class="font-light mb-5 ml-5">
           We use our secret recioes with only the best ingredients to make our burgers.
           Starting from patties, sauces, and even buns.
         </p>
       </div>
       <div>
-        <img src="cake.png" class="w-[100px] mx-auto" alt="" />
-        <h3 class="font-oswald uppercase mt-5 ml-5">Quality Food</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-20 w-20 stroke-1 mx-auto"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+          />
+        </svg>
+        <h3 class="font-medium font-oswald uppercase text-2xl mt-5 ml-5 py-5">
+          Quality Food
+        </h3>
         <p class="font-light mb-5 ml-5">
           We purchase our ingredients from the best suppliers daily, to ensure the
           freshest quality of our burgers.
         </p>
       </div>
       <div>
-        <img src="delivery.png" class="w-[100px] mx-auto" alt="" />
-        <h3 class="font-oswald uppercase mt-5 ml-5">Fastest Delivery</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-20 w-20 stroke-1 mx-auto"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+        <h3 class="font-medium font-oswald uppercase text-2xl mt-5 ml-5 py-5">
+          Fastest Delivery
+        </h3>
         <p class="font-light mb-5 ml-5">
           Burgers are best served while it's hot. We deliver to your door with our speedy
           partners from the nearest outlet.
@@ -116,6 +164,43 @@
             price="15.35"
           />
         </div>
+      </div>
+
+      <div
+        class="grid grid-cols-12 font-oswald uppercase text-4xl text-yellow-800 px-40 gap-5"
+      >
+        <div
+          class="col-span-5 bg-cover bg-center bg-[url('/fries-bg-1.jpg')] pl-20 pb-10 pt-10"
+        >
+          <h4>Get your free</h4>
+          <h4>Cheese Fries</h4>
+          <button class="uppercase bg-red-500 text-white text-lg py-3 px-8 mt-5">
+            Claim now
+          </button>
+        </div>
+
+        <div
+          class="col-span-7 bg-cover bg-center bg-[url('/burger-bg-1.jpg')] text-right pl-20 pb-10 pt-10 pr-10"
+        >
+          <h4>
+            Crispy <br />
+            Chicken
+          </h4>
+          <h4>
+            Burger <br />
+            is back!
+          </h4>
+          <button class="uppercase bg-red-500 text-white text-lg py-3 px-8 mt-5">
+            Claim now
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 px-40 mt-5 gap-5">
+        <img src="offer-1.jpg" alt="" /><img src="offer-2.jpg" alt="" /><img
+          src="offer-3.jpg"
+          alt=""
+        />
       </div>
     </div>
   </div>
