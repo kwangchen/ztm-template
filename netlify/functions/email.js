@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-export async function handler (event,context) {
+exports.handler = async function handler (event,context) {
     const body = JSON.parse(event.body);
     const customerEmail = body.email;
     const orders = body.orders;
