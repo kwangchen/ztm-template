@@ -1,3 +1,5 @@
+const nodemailer = require("nodemailer");
+
 export async function handler (event,context) {
     const body = JSON.parse(event.body);
     const customerEmail = body.email;
@@ -14,18 +16,18 @@ export async function handler (event,context) {
     emailContent = emailContent + '\n Total Amount: ${total.toFixed(2)}';
 
     const email = {
-        from: 'teoh.alvin@electionslab.com',
+        from: "kwangchenz@gmail.com",
         to: customerEmail,
-        subject: 'New Order Received',
+        subject: "New Order Received",
         text: emailContent,
     };
 
     const mailer = nodemailer.createTransport({
-        host: 'smtp.sendgrid.net',
+        host: "smtp.sendgrid.net",
         port: 465,
         secure: true,
         auth: {
-            user:'apikey',
+            user:"apikey",
             pass: process.env.sendgridApiKey
         }
     });
@@ -35,11 +37,11 @@ export async function handler (event,context) {
         return {
             statusCode:200,
             body: JSON.stringify({
-                message: 'Email sent successfully',
+                message: "Email sent successfully",
             }),
         }
     }
     catch (error) {
-        console.log('Error sending email',error);
+        console.log('Error sending email', error);
     }
 }
