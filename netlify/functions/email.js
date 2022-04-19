@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-exports.handler = async function handler (event,context) {
+exports.handler = async function handler (event, context) {
     const body = JSON.parse(event.body);
     const customerEmail = body.email;
     const orders = body.orders;
@@ -9,7 +9,7 @@ exports.handler = async function handler (event,context) {
     let emailContent = "We have received a new order: \n\n";
 
     orders.forEach((order)=> {
-        emailContent = emailContent + '${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}';
+        emailContent = emailContent + '${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}\n';
         total = total + (order.price * order.quantity);
     });
 
