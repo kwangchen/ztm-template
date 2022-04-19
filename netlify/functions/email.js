@@ -9,7 +9,9 @@ exports.handler = async function handler (event, context) {
     let emailContent = "We have received a new order: \n\n";
 
     orders.forEach((order)=> {
-        emailContent = emailContent + '${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}\n';
+        emailContent = 
+          emailContent +
+          '${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}\n';
         total = total + (order.price * order.quantity);
     });
 
@@ -37,7 +39,7 @@ exports.handler = async function handler (event, context) {
         return {
             statusCode:200,
             body: JSON.stringify({
-                message: "Email sent successfully",
+              message: "Email sent successfully",
             }),
         }
     }
