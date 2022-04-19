@@ -1,6 +1,6 @@
-const nodemailer = require("nodemailer")
+import { createTransport } from "nodemailer";
 
-exports.handler = async function (event,context) {
+export async function handler (event,context) {
     const body = JSON.parse(event.body);
     const customerEmail = body.email;
     const orders = body.orders;
@@ -22,7 +22,7 @@ exports.handler = async function (event,context) {
         text: emailContent,
     };
 
-    const mailer = nodemailer.createTransport({
+    const mailer = createTransport({
         host: 'smtp.sendgrid.net',
         port: 465,
         secure: true,
@@ -44,4 +44,4 @@ exports.handler = async function (event,context) {
     catch (error) {
         console.log('Error sending email',error);
     }
-};
+}
