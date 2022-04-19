@@ -1,5 +1,3 @@
-import * as nodemailer from "nodemailer";
-
 export async function handler (event,context) {
     const body = JSON.parse(event.body);
     const customerEmail = body.email;
