@@ -1,4 +1,4 @@
-import { createTransport } from "nodemailer";
+import * as nodemailer from "nodemailer";
 
 export async function handler (event,context) {
     const body = JSON.parse(event.body);
@@ -22,7 +22,7 @@ export async function handler (event,context) {
         text: emailContent,
     };
 
-    const mailer = createTransport({
+    const mailer = nodemailer.createTransport({
         host: 'smtp.sendgrid.net',
         port: 465,
         secure: true,
