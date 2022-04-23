@@ -12,7 +12,7 @@
             <NuxtLink to="/menu">Our Menu</NuxtLink>
             <li>Locations</li>
             <li>Contacts</li>
-            <NuxtLink to="/cart">Cart</NuxtLink>
+            <NuxtLink to="/cart"> Cart </NuxtLink>
           </ul>
         </div>
       </div>
