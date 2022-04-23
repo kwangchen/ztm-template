@@ -41,7 +41,17 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/firebase'
   ],
-
+  firebase: {
+    config: {
+      apiKey: "AIzaSyAUS05WBnodmO6biNYHk6KJhmg64123plo",
+  authDomain: "ztmburger-453af.firebaseapp.com",
+  projectId: "ztmburger-453af",
+  storageBucket: "ztmburger-453af.appspot.com",
+  messagingSenderId: "425066864215",
+  appId: "1:425066864215:web:9b1140daa687b40099cd12",
+  measurementId: "G-YTZ49C8M4G"
+    },
+  },
   firebase: {
     config: {
       apiKey: "AIzaSyDnN_Y67NnOydqJgM7IoRtoJsEYCNVP59g",
