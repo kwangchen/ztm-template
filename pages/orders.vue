@@ -106,9 +106,15 @@ export default {
 
   methods: {
     readorders() {
-      this.$axios.get('/.netlify/functions/readorders').then((response) => {
-        this.orders = response.data;
-      });
+      this.$axios
+        .get('/.netlify/functions/readorders', {
+          headers: {
+            Authorization: 'Bearer ${this.user.token.access_token}',
+          },
+        })
+        .then((response) => {
+          this.orders = response.data;
+        });
     },
 
     login() {
