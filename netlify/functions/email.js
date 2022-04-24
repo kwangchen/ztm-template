@@ -15,7 +15,7 @@ exports.handler = async function handler (event, context) {
         total = total + (order.price * order.quantity);
     });
 
-    emailContent = emailContent + '\n Total Amount: ${total.toFixed(2)}';
+    emailContent = emailContent + `\n Total Amount: ${total.toFixed(2)}`;
 
     const email = {
         from: "teoh.alvin@electionslab.com",
