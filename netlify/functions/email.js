@@ -11,7 +11,7 @@ exports.handler = async function handler (event, context) {
     orders.forEach((order)=> {
         emailContent = 
           emailContent +
-          '${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}\n';
+          "${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}\n";
         total = total + (order.price * order.quantity);
     });
 
