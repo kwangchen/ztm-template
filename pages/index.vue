@@ -8,10 +8,10 @@
 
         <div id="menu-right">
           <ul class="grid grid-cols-5 text-lg font-oswald text-white uppercase pt-5">
-            <li>About Us</li>
+            <NuxtLink to="/about">About Us</NuxtLink>
             <NuxtLink to="/menu">Our Menu</NuxtLink>
-            <li>Locations</li>
-            <li>Contacts</li>
+            <NuxtLink to="/location">Locations</NuxtLink>
+            <NuxtLink to="/contacts">Contacts</NuxtLink>
             <NuxtLink to="/cart">Cart ({{ $store.getters.totalItems }}) </NuxtLink>
           </ul>
         </div>
