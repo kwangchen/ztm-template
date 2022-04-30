@@ -10,7 +10,7 @@
           <ul
             class="grid md:grid-cols-5 text-lg font-oswald text-white text-right uppercase md:pt-5"
           >
-            <NuxtLink to="/about">About Us</NuxtLink>
+            <NuxtLink to="/index">About Us</NuxtLink>
             <NuxtLink to="/menu">Our Menu</NuxtLink>
             <NuxtLink to="/locations">Locations</NuxtLink>
             <NuxtLink to="/ontacts">Contacts</NuxtLink>

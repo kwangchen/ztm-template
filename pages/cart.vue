@@ -10,10 +10,10 @@
           <ul
             class="grid md:grid-cols-5 text-lg font-oswald text-white text-right uppercase py-5 pr-5"
           >
-            <li>About Us</li>
+            <NuxtLink to="/index">About Us</NuxtLink>
             <NuxtLink to="/menu">Our Menu</NuxtLink>
-            <li>Locations</li>
-            <li>Contacts</li>
+            <NuxtLink to="/locations">Locations</NuxtLink>
+            <NuxtLink to="/contacts">Contacts</NuxtLink>
             <NuxtLink to="/cart">Cart</NuxtLink>
           </ul>
         </div>
