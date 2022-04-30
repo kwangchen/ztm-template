@@ -1,13 +1,15 @@
 <template>
   <div>
-    <div class="bg-[url('/menu-page.jpg')] px-20">
+    <div class="bg-[url('/menu-page.jpg')] md:px-10">
       <div id="menu" class="grid grid-cols-2 py-5">
         <div id="menu-left">
           <img src="logo.png" class="w-[150px]" alt="" />
         </div>
 
         <div id="menu-right">
-          <ul class="grid grid-cols-5 text-lg font-oswald text-white uppercase pt-5">
+          <ul
+            class="grid md:grid-cols-5 text-lg font-oswald text-white text-right uppercase py-5 pr-5"
+          >
             <li>About Us</li>
             <NuxtLink to="/menu">Our Menu</NuxtLink>
             <li>Locations</li>
@@ -21,7 +23,7 @@
       </h1>
     </div>
 
-    <table class="table-auto w-2/3 mt-20 mx-auto mb-20">
+    <table class="md:table-auto w-2/3 mt-20 mx-auto mb-20">
       <thead>
         <tr>
           <th class="text-left">Name</th>
