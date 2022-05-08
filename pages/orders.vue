@@ -109,7 +109,7 @@ export default {
       this.$axios
         .get('/.netlify/functions/readorders', {
           headers: {
-            Authorization: 'Bearer ${this.user.token.access_token}',
+            Authorization: `Bearer ${this.user.token.access_token}`,
           },
         })
         .then((response) => {
